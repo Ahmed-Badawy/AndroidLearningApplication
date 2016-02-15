@@ -1,8 +1,5 @@
 package com.courtaks.learningapplication.projects1.listView;
 
-
-
-
 import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;

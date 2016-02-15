@@ -34,8 +34,18 @@ public class list_activity extends ListActivity {
         super.onResume();
 //this one generate a list with texts:- also person class gets a toString output to the name
 //        ArrayAdapter<Person> adapter = new ArrayAdapter<Person>(this,android.R.layout.simple_expandable_list_item_1,persons);
+
+//also we can use xml string arrays like this:
+//        ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+//                this,
+//                android.R.layout.simple_expandable_list_item_1,
+//                getResources().getStringArray(R.array.countries)
+//        );
+
 //this one generate a list with custom view (personAdapter creation):-
         PersonAdapter adapter = new PersonAdapter(this,R.layout.list_custom_layout,persons);
+
+
         setListAdapter(adapter);
     }
 

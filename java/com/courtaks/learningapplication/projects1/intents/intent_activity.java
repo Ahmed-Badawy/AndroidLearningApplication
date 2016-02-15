@@ -51,6 +51,8 @@ public class intent_activity extends AppCompatActivity {
 
 //change activity 1:
     public void normal_intent(View v){
+        Log.d("depug","stoped the application");
+
         Intent intent = new Intent(this , intent_reciever.class); //this refer to the Testing3 Class.
         startActivity(intent); // for regular intents
     }
