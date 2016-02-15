@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@drawable/background_cover2"
+    android:orientation="vertical">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Element manipulation"
+        android:id="@+id/button1"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goto_elm"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thread Activity button"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goto_thread"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Life Cycle"
+        android:id="@+id/button3"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goto_lifecycle"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Media Player"
+        android:id="@+id/button4"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goto_mediaPlayer"
+        />
+
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List Activity 1"
+        android:id="@+id/button5"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goto_list1"
+        />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List Activity 2"
+        android:id="@+id/button10"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goto_list2"
+        />
+
+
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intent Types"
+        android:id="@+id/button6"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goto_intent_types"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take pic then set wallpaper"
+        android:id="@+id/button7"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goto_setWallpaper_app"
+        />
+
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Populate From list with model"
+        android:id="@+id/button8"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goto_auto_btns"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dialogues"
+        android:id="@+id/button9"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goto_dialogues"
+        />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read Internal File Content"
+        android:id="@+id/button11"
+        android:layout_gravity="center_horizontal"
+        android:onClick="get_resource"
+        />
+
+</LinearLayout>

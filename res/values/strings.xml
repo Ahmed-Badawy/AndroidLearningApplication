@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Learning Application</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_elm_min">elm_min</string>
+    <string name="title_activity_thread_activity">thread_activity</string>
+    <string name="title_activity_lifecycle">lifecycle</string>
+    <string name="title_activity_media_player">mediaPlayer</string>
+    <string name="title_activity_list_activity">list_activity</string>
+    <string name="title_activity_list_view2">listView2</string>
+    <string name="title_activity_intent_types">intent_types</string>
+    <string name="title_activity_camera">camera</string>
+    <string name="title_activity_intent_reciever">intent_reciever</string>
+    <string name="title_activity_intent_activity">intent_activity</string>
+    <string name="lorem">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus esse harum labore molestias, non nulla numquam sunt? Aut excepturi explicabo iste magni nemo neque praesentium reprehenderit, sint. Earum, eveniet, hic.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci autem eius enim eum expedita iste ullam! Animi blanditiis cum delectus ducimus expedita maxime minima non perferendis, possimus tenetur voluptatem.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deserunt eos natus voluptas? Accusantium asperiores debitis dolor, dolorem eos laboriosam minima, nesciunt nobis officiis recusandae soluta tempora, tempore voluptas voluptate.
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus esse harum labore molestias, non nulla numquam sunt? Aut excepturi explicabo iste magni nemo neque praesentium reprehenderit, sint. Earum, eveniet, hic.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci autem eius enim eum expedita iste ullam! Animi blanditiis cum delectus ducimus expedita maxime minima non perferendis, possimus tenetur voluptatem.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deserunt eos natus voluptas? Accusantium asperiores debitis dolor, dolorem eos laboriosam minima, nesciunt nobis officiis recusandae soluta tempora, tempore voluptas voluptate.
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus esse harum labore molestias, non nulla numquam sunt? Aut excepturi explicabo iste magni nemo neque praesentium reprehenderit, sint. Earum, eveniet, hic.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci autem eius enim eum expedita iste ullam! Animi blanditiis cum delectus ducimus expedita maxime minima non perferendis, possimus tenetur voluptatem.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deserunt eos natus voluptas? Accusantium asperiores debitis dolor, dolorem eos laboriosam minima, nesciunt nobis officiis recusandae soluta tempora, tempore voluptas voluptate.
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus esse harum labore molestias, non nulla numquam sunt? Aut excepturi explicabo iste magni nemo neque praesentium reprehenderit, sint. Earum, eveniet, hic.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci autem eius enim eum expedita iste ullam! Animi blanditiis cum delectus ducimus expedita maxime minima non perferendis, possimus tenetur voluptatem.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deserunt eos natus voluptas? Accusantium asperiores debitis dolor, dolorem eos laboriosam minima, nesciunt nobis officiis recusandae soluta tempora, tempore voluptas voluptate.
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus esse harum labore molestias, non nulla numquam sunt? Aut excepturi explicabo iste magni nemo neque praesentium reprehenderit, sint. Earum, eveniet, hic.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci autem eius enim eum expedita iste ullam! Animi blanditiis cum delectus ducimus expedita maxime minima non perferendis, possimus tenetur voluptatem.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deserunt eos natus voluptas? Accusantium asperiores debitis dolor, dolorem eos laboriosam minima, nesciunt nobis officiis recusandae soluta tempora, tempore voluptas voluptate.
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus esse harum labore molestias, non nulla numquam sunt? Aut excepturi explicabo iste magni nemo neque praesentium reprehenderit, sint. Earum, eveniet, hic.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci autem eius enim eum expedita iste ullam! Animi blanditiis cum delectus ducimus expedita maxime minima non perferendis, possimus tenetur voluptatem.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deserunt eos natus voluptas? Accusantium asperiores debitis dolor, dolorem eos laboriosam minima, nesciunt nobis officiis recusandae soluta tempora, tempore voluptas voluptate.
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus esse harum labore molestias, non nulla numquam sunt? Aut excepturi explicabo iste magni nemo neque praesentium reprehenderit, sint. Earum, eveniet, hic.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci autem eius enim eum expedita iste ullam! Animi blanditiis cum delectus ducimus expedita maxime minima non perferendis, possimus tenetur voluptatem.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deserunt eos natus voluptas? Accusantium asperiores debitis dolor, dolorem eos laboriosam minima, nesciunt nobis officiis recusandae soluta tempora, tempore voluptas voluptate.
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus esse harum labore molestias, non nulla numquam sunt? Aut excepturi explicabo iste magni nemo neque praesentium reprehenderit, sint. Earum, eveniet, hic.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci autem eius enim eum expedita iste ullam! Animi blanditiis cum delectus ducimus expedita maxime minima non perferendis, possimus tenetur voluptatem.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deserunt eos natus voluptas? Accusantium asperiores debitis dolor, dolorem eos laboriosam minima, nesciunt nobis officiis recusandae soluta tempora, tempore voluptas voluptate.
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus esse harum labore molestias, non nulla numquam sunt? Aut excepturi explicabo iste magni nemo neque praesentium reprehenderit, sint. Earum, eveniet, hic.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci autem eius enim eum expedita iste ullam! Animi blanditiis cum delectus ducimus expedita maxime minima non perferendis, possimus tenetur voluptatem.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deserunt eos natus voluptas? Accusantium asperiores debitis dolor, dolorem eos laboriosam minima, nesciunt nobis officiis recusandae soluta tempora, tempore voluptas voluptate.
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus esse harum labore molestias, non nulla numquam sunt? Aut excepturi explicabo iste magni nemo neque praesentium reprehenderit, sint. Earum, eveniet, hic.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci autem eius enim eum expedita iste ullam! Animi blanditiis cum delectus ducimus expedita maxime minima non perferendis, possimus tenetur voluptatem.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deserunt eos natus voluptas? Accusantium asperiores debitis dolor, dolorem eos laboriosam minima, nesciunt nobis officiis recusandae soluta tempora, tempore voluptas voluptate.
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus esse harum labore molestias, non nulla numquam sunt? Aut excepturi explicabo iste magni nemo neque praesentium reprehenderit, sint. Earum, eveniet, hic.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci autem eius enim eum expedita iste ullam! Animi blanditiis cum delectus ducimus expedita maxime minima non perferendis, possimus tenetur voluptatem.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deserunt eos natus voluptas? Accusantium asperiores debitis dolor, dolorem eos laboriosam minima, nesciunt nobis officiis recusandae soluta tempora, tempore voluptas voluptate.
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus esse harum labore molestias, non nulla numquam sunt? Aut excepturi explicabo iste magni nemo neque praesentium reprehenderit, sint. Earum, eveniet, hic.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci autem eius enim eum expedita iste ullam! Animi blanditiis cum delectus ducimus expedita maxime minima non perferendis, possimus tenetur voluptatem.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deserunt eos natus voluptas? Accusantium asperiores debitis dolor, dolorem eos laboriosam minima, nesciunt nobis officiis recusandae soluta tempora, tempore voluptas voluptate.
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus esse harum labore molestias, non nulla numquam sunt? Aut excepturi explicabo iste magni nemo neque praesentium reprehenderit, sint. Earum, eveniet, hic.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci autem eius enim eum expedita iste ullam! Animi blanditiis cum delectus ducimus expedita maxime minima non perferendis, possimus tenetur voluptatem.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deserunt eos natus voluptas? Accusantium asperiores debitis dolor, dolorem eos laboriosam minima, nesciunt nobis officiis recusandae soluta tempora, tempore voluptas voluptate.
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus esse harum labore molestias, non nulla numquam sunt? Aut excepturi explicabo iste magni nemo neque praesentium reprehenderit, sint. Earum, eveniet, hic.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci autem eius enim eum expedita iste ullam! Animi blanditiis cum delectus ducimus expedita maxime minima non perferendis, possimus tenetur voluptatem.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deserunt eos natus voluptas? Accusantium asperiores debitis dolor, dolorem eos laboriosam minima, nesciunt nobis officiis recusandae soluta tempora, tempore voluptas voluptate.
+    </string>
+    <string name="title_activity_auto_btns">auto_btns</string>
+    <string name="title_activity_dialogues_activity">dialogues_activity</string>
+    <string name="title_activity_implicit_intent_activity">Implicit_intent_activity</string>
+
+</resources>

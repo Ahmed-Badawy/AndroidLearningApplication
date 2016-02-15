@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+
+    <!-- we now manipulated the menu: -->
+    <item android:id="@+id/custom1" android:title="Custom Menu 1"
+        android:orderInCategory="100" />
+
+    <item android:id="@+id/custom2" android:title="Custom Menu 2"
+        android:orderInCategory="100" />
+
+    <item android:id="@+id/custom3" android:title="Custom Menu 3"
+        android:orderInCategory="100"/>
+
+<!--notice that the above [android:showAsAction] didn't work (old version of android). what works is [app:showAsAction] -->
+
+    <item android:id="@+id/custom4" android:title="Custom Menu 4"
+        android:orderInCategory="120" app:showAsAction="always" />
+
+    <item android:id="@+id/custom5" android:title="Custom Menu 5"
+        android:orderInCategory="120" app:showAsAction="always" />
+
+    <item android:id="@+id/custom6" android:title="Custom Menu 6"
+        android:orderInCategory="120" app:showAsAction="ifRoom" />
+
+
+    <item android:id="@+id/custom7" android:title="Custom Menu 7" android:orderInCategory="120" app:showAsAction="ifRoom" />
+    <item android:id="@+id/custom8" android:title="Custom Menu 8" android:orderInCategory="120" app:showAsAction="ifRoom" />
+    <item android:id="@+id/custom9" android:title="Custom Menu 9" android:orderInCategory="120" app:showAsAction="ifRoom" />
+    <item android:id="@+id/custom10" android:title="Custom Menu 10" android:orderInCategory="120" app:showAsAction="ifRoom" />
+    <item android:id="@+id/custom11" android:title="Custom Menu 11" android:orderInCategory="120" app:showAsAction="ifRoom" />
+    <item android:id="@+id/custom12" android:title="Custom Menu 12" android:orderInCategory="120" app:showAsAction="always" />
+    <item android:id="@+id/custom13" android:title="Custom Menu 13" android:orderInCategory="120" app:showAsAction="always" />
+    <item android:id="@+id/custom14" android:title="Custom Menu 14" android:orderInCategory="120" app:showAsAction="always" />
+    <item android:id="@+id/custom15" android:title="Custom Menu 15" android:orderInCategory="120" app:showAsAction="always" />
+
+
+</menu>

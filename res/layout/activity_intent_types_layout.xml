@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.courtaks.learningapplication.projects1.intents.intent_types"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Go To An Activity"
+        android:id="@+id/intent_btn_1"
+        android:onClick="normal_intent"
+        />
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="intent with extras (Explicit_intent)"
+        android:id="@+id/intent_btn_2"
+        android:onClick="Explicit_intent"
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Implicit Intent"
+        android:id="@+id/intent_btn_14"
+        android:onClick="Implicit_intent"
+        />
+
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Passing Parcelable Model Intent"
+        android:id="@+id/intent_btn_3"
+        android:onClick="passing_Parcelable_model"
+        />
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Email"
+        android:id="@+id/button9"
+        android:onClick="send_email"
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="To Website"
+        android:id="@+id/button10"
+        android:onClick="view_website"
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Text"
+        android:id="@+id/button11"
+        android:onClick="implicitSendText"
+        />
+
+
+</LinearLayout>

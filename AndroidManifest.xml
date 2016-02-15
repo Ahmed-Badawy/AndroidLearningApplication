@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.courtaks.learningapplication">
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!--
+        this is a custom theme:
+            Custome Theme is:   android:theme="@style/Theme.AppCompat.Light.Dialog.MinWidth"
+            Default Theme is:   android:theme="@style/AppTheme"
+    -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!-- third line means don't restart the app every (change orientation) or (screen resize) -->
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".projects1.elm_min"
+            android:label="@string/title_activity_elm_min" />
+        <activity
+            android:name=".projects1.thread_activity"
+            android:label="@string/title_activity_thread_activity" />
+        <activity
+            android:name=".projects1.lifecycle"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/title_activity_lifecycle" />
+        <activity
+            android:name=".projects1.mediaPlayer"
+            android:label="@string/title_activity_media_player" />
+        <activity
+            android:name=".projects1.listView.list_activity"
+            android:label="@string/title_activity_list_activity" />
+        <activity
+            android:name=".projects1.listView2.listView2"
+            android:label="@string/title_activity_list_view2" />
+        <activity
+            android:name=".projects1.intent_types"
+            android:label="@string/title_activity_intent_types" />
+        <activity
+            android:name=".projects1.SetWallpaperApp"
+            android:label="hahaha this is a custom label man"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".projects1.intents.intent_reciever"
+            android:label="@string/title_activity_intent_reciever">
+        </activity>
+        <activity
+            android:name=".projects1.intents.intent_activity"
+            android:label="@string/title_activity_intent_activity" />
+
+        <!-- now we register the phone receiver -->
+        <receiver android:name=".customPhoneReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".projects1.auto_buttons_with_intents.auto_btns"
+            android:label="@string/title_activity_auto_btns"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".projects1.auto_buttons_with_intents.auto_butns_item_view" />
+        <activity
+            android:name=".projects1.dialogues_activity"
+            android:label="@string/title_activity_dialogues_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+
+        <activity
+            android:name=".projects1.intents.Implicit_intent_activity"
+            android:label="@string/title_activity_implicit_intent_activity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- this is to handle send actions in this application -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+
+
+
+
+
+    </application>
+
+</manifest>
