@@ -61,5 +61,6 @@
     <string name="title_activity_auto_btns">auto_btns</string>
     <string name="title_activity_dialogues_activity">dialogues_activity</string>
     <string name="title_activity_implicit_intent_activity">Implicit_intent_activity</string>
+    <string name="title_activity_contacts_logger">Contacts_logger</string>
 
 </resources>

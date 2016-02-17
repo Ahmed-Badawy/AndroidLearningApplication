@@ -34,14 +34,24 @@
         android:onClick="open_dialogue2"
         />
 
+
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Progress Dialogue"
+        android:text="Progress Dialogue Refresher"
         android:id="@+id/button14"
         android:layout_gravity="center_horizontal"
-        android:onClick="open_dialogue3"
+        android:onClick="progress_dialogue1"
         />
 
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Progress Dialogue (Progress Bar)"
+        android:id="@+id/button15"
+        android:layout_gravity="center_horizontal"
+        android:onClick="progress_dialogue2"
+        />
 </LinearLayout>

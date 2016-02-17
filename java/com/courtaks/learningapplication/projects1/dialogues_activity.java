@@ -63,15 +63,31 @@ public class dialogues_activity extends AppCompatActivity {
     public void open_dialogue2(View v) {
         Dialog d = new Dialog(this);
         d.setContentView(R.layout.activity_lifecycle);
+        d.setTitle("This is the dialog title");
         d.show();
     }
 
-    public void open_dialogue3(View v) {
+
+
+    public void progress_dialogue1(View v) {
         ProgressDialog pDialog = new ProgressDialog(this);
-        pDialog.setMessage("Ahmed Badawy is currently getting data mother fucker...");
+        pDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER); //this will output the refresher icon
+        pDialog.setMessage("Ahmed Badawy said hello.");
         pDialog.setIndeterminate(false);
         pDialog.setCancelable(true);
         pDialog.show();
     }
+    public void progress_dialogue2(View v) {
+        ProgressDialog pDialog = new ProgressDialog(this);
+        pDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL); //this will output the progress bar
+        pDialog.setMessage("Ahmed Badawy said hello.");
+        pDialog.setIndeterminate(false);
+        pDialog.setCancelable(true);
+        pDialog.show();
+        pDialog.setProgress(70); //must be after show is done
+    }
+
+
+
 
 }

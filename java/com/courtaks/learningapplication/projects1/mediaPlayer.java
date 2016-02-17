@@ -2,17 +2,21 @@ package com.courtaks.learningapplication.projects1;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.MediaController;
+import android.widget.VideoView;
 
 import com.courtaks.learningapplication.Helpers.Chelper;
 import com.courtaks.learningapplication.R;
 
 public class mediaPlayer extends ActionBarActivity {
+
     MediaPlayer oursong;
 
     @Override
@@ -21,6 +25,17 @@ public class mediaPlayer extends ActionBarActivity {
         setContentView(R.layout.activity_media_player_layout);
         oursong = MediaPlayer.create(this,R.raw.song1);
 //        oursong.start();
+
+
+
+
+        VideoView mVideoView = (VideoView) findViewById(R.id.videoView1);
+        mVideoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.video2));
+        mVideoView.setMediaController(new MediaController(this));
+        mVideoView.requestFocus();//give the video player focus by default
+        mVideoView.start();
+
+
     }
 
 

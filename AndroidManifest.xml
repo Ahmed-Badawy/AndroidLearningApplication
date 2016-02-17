@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <!--
         this is a custom theme:
@@ -46,17 +47,16 @@
         <activity
             android:name=".projects1.listView2.listView2"
             android:label="@string/title_activity_list_view2" />
-        <activity
-            android:name=".projects1.intent_types"
-            android:label="@string/title_activity_intent_types" />
+        <!-- <activity -->
+        <!-- android:name=".projects1.intent_types" -->
+        <!-- android:label="@string/title_activity_intent_types" /> -->
         <activity
             android:name=".projects1.SetWallpaperApp"
             android:label="hahaha this is a custom label man"
             android:screenOrientation="portrait" />
         <activity
             android:name=".projects1.intents.intent_reciever"
-            android:label="@string/title_activity_intent_reciever">
-        </activity>
+            android:label="@string/title_activity_intent_reciever"></activity>
         <activity
             android:name=".projects1.intents.intent_activity"
             android:label="@string/title_activity_intent_activity" />
@@ -77,9 +77,6 @@
             android:name=".projects1.dialogues_activity"
             android:label="@string/title_activity_dialogues_activity"
             android:theme="@style/AppTheme.NoActionBar" />
-
-
-
         <activity
             android:name=".projects1.intents.Implicit_intent_activity"
             android:label="@string/title_activity_implicit_intent_activity"
@@ -88,15 +85,16 @@
             <!-- this is to handle send actions in this application -->
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <data android:mimeType="image/*" />
             </intent-filter>
         </activity>
-
-
-
-
-
+        <activity
+            android:name=".Contacts_logger"
+            android:label="@string/title_activity_contacts_logger"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

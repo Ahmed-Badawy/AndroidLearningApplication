@@ -8,6 +8,17 @@
     android:orientation="vertical"
     android:gravity="center_horizontal">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Try To Change Orientation to Change Layout File"
+        android:id="@+id/textView9"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="#333333"
+        android:padding="10dp"
+        />
 
     <Button
         android:layout_width="fill_parent"

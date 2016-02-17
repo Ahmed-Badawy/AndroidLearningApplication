@@ -3,15 +3,27 @@ package com.courtaks.learningapplication;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.res.Configuration;
+import android.graphics.Color;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.support.annotation.NonNull;
+import android.support.v4.app.TaskStackBuilder;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.NotificationCompat;
 import android.util.Log;
+import android.view.ContextMenu;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -28,6 +40,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.charset.CharsetDecoder;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -41,6 +54,15 @@ public class MainActivity extends AppCompatActivity {
 
 //this is how we verify of the fact that the app gets restarted every screen orientation change:-
         Chelper.toast(ac,"Orientation Changed");//in the create veriry number of times the app gets restarted.
+
+
+
+
+
+//this will open a context menu on a button
+        Button click_hold = (Button) findViewById(R.id.click_hold);
+        registerForContextMenu(click_hold); // this will fire the onCreateContextMenu action so we need to override it
+
 
 
 
@@ -62,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
 //        b1.setOnClickListener(this);
     }
 
-
 //    public void onClick(View v) {
 //        int id = v.getId();
 //        switch (id) {
@@ -78,6 +99,29 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+//-----------------------------------context menus----------------------------------------------
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_elm_min,menu);
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        String id = (String) item.getTitle();
+        Chelper.toast(this,"the id of the selected item is: "+id);
+        return super.onContextItemSelected(item);
+    }
+//-----------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
 //this is how you config a orientation action
     @Override
     public void onConfigurationChanged(Configuration newConfig){
@@ -85,8 +129,6 @@ public class MainActivity extends AppCompatActivity {
         if(newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) Chelper.toast(ac,"Orientation To Landscape");
         else Chelper.toast(ac,"Orientation To Portrait");
     }
-
-
 
 
     @Override
@@ -164,6 +206,9 @@ public class MainActivity extends AppCompatActivity {
     public void goto_auto_btns(View v){
         Chelper.goAc(ac, auto_btns.class);
     }
+    public void goto_contacts_provider(View v){
+        Chelper.goAc(ac, Contacts_logger.class);
+    }
 
 
 
@@ -171,9 +216,8 @@ public class MainActivity extends AppCompatActivity {
 //        InputStream in = new FileInputStream(new File("C:/temp/test.txt")); //in java
         InputStream is = this.getResources().openRawResource(R.raw.persons); //in android
         String out = null;
-
         try { out = InputStreamToString(is); } catch(IOException e){ e.printStackTrace(); }
-        Log.d("output_data",out);
+        Log.d("output_data", out);
     }
 
 
@@ -192,6 +236,54 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    public void notify_me(View v){ //called statis bar notification
+        Intent resultIntent = new Intent(this, MainActivity.class);
+        output_notification(10,android.R.drawable.stat_notify_more,
+                "Notification Title","Hello! this is the notification text",resultIntent);
+        output_notification(20,android.R.drawable.ic_delete,
+                "Other Notification","other message",resultIntent);
 
+        Chelper.toast(this, "Notified You!!!");
+    }
+
+
+    private void output_notification(int Mid,int icon,String title,String msg,Intent i){
+        NotificationCompat.Builder mBuilder =
+                (NotificationCompat.Builder) new NotificationCompat.Builder(this)
+                        .setSmallIcon(icon)
+                        .setContentTitle(title)
+                        .setContentText(msg);
+
+// The stack builder object will contain an artificial back stack for the
+// started Activity.
+// This ensures that navigating backward from the Activity leads out of
+// your application to the Home screen.
+        TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
+// Adds the back stack for the Intent (but not the Intent itself)
+        stackBuilder.addParentStack(MainActivity.class);
+// Adds the Intent that starts the Activity to the top of the stack
+        stackBuilder.addNextIntent(i);
+        PendingIntent resultPendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
+        mBuilder.setContentIntent(resultPendingIntent);
+
+
+//لعب هنا من الهزاز للستيل
+        mBuilder.setAutoCancel(true);
+        mBuilder.setLights(Color.BLUE, 500, 500);
+        long[] pattern = {500,500,500,500,500,500,500,500,500};
+        mBuilder.setVibrate(pattern);
+        mBuilder.setStyle(new NotificationCompat.InboxStyle());
+//        mBuilder.setSound(Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION));
+        mBuilder.setSound(Uri.parse("android.resource://" + MainActivity.this.getPackageName() + "/" + R.raw.song1));
+//-------------------------------------------
+
+
+        NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+
+// mId allows you to update the notification later on.
+//        int mId = 40;
+        mNotificationManager.notify(Mid,mBuilder.build());
+
+    }
 
 }

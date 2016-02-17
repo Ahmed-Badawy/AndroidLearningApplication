@@ -17,22 +17,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/Implicit_intent_image"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="218dp"
-        android:src="@mipmap/ic_launcher" />
+        android:layout_marginTop="138dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Share An Image With this application. the image will get put inside here... http://ahmed-badawy.com"
         android:id="@+id/textView8"
-        android:layout_below="@+id/Implicit_intent_image"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="57dp"
         android:textColor="@color/dark"
         android:textSize="20dp"
-        android:autoLink="all" />
+        android:autoLink="all"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
 
 
 </RelativeLayout>

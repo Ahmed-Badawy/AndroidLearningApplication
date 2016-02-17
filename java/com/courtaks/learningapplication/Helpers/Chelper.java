@@ -3,6 +3,7 @@ package com.courtaks.learningapplication.Helpers;
 import android.app.Activity;
 import android.content.Intent;
 import android.text.Editable;
+import android.view.Gravity;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -40,7 +41,10 @@ public class Chelper {
     }
 
     public static void toast(Activity activity, String txt){
-        Toast.makeText(activity,txt,Toast.LENGTH_SHORT).show();
+        Toast toast = Toast.makeText(activity, txt, Toast.LENGTH_SHORT);
+        int xoffset=30,yoffset=30;
+        toast.setGravity(Gravity.RIGHT,xoffset,yoffset);
+        toast.show();
     }
 
 

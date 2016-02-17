@@ -5,14 +5,51 @@
     android:id="@+id/lifecycle_activity"
     >
 
-    <TextView
+    <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Life Cycle &amp; Orientation"
-        android:id="@+id/textView3"
+        android:id="@+id/scrollView3"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="30sp"
-        />
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Life Cycle &amp; Orientation"
+                android:id="@+id/textView3"
+                android:textSize="30sp"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3"
+                android:src="@drawable/pic1"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/lorem"
+                android:id="@+id/textView11"
+                android:layout_margin="10dp"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    
+
+
+
 </RelativeLayout>
