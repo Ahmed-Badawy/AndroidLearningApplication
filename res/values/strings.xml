@@ -62,5 +62,6 @@
     <string name="title_activity_dialogues_activity">dialogues_activity</string>
     <string name="title_activity_implicit_intent_activity">Implicit_intent_activity</string>
     <string name="title_activity_contacts_logger">Contacts_logger</string>
+    <string name="title_activity_animation_activity">animation_activity</string>
 
 </resources>

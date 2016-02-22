@@ -56,7 +56,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".projects1.intents.intent_reciever"
-            android:label="@string/title_activity_intent_reciever"></activity>
+            android:label="@string/title_activity_intent_reciever" />
         <activity
             android:name=".projects1.intents.intent_activity"
             android:label="@string/title_activity_intent_activity" />
@@ -94,6 +94,10 @@
         <activity
             android:name=".Contacts_logger"
             android:label="@string/title_activity_contacts_logger"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".projects1.animation.animation_activity"
+            android:label="@string/title_activity_animation_activity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
